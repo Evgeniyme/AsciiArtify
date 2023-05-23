@@ -18,7 +18,7 @@
 |             |                                                    | - Supports monitoring      |                                    |
 |             |                                                    |   and management tools     |                                    |
 
-##1.  Minikube:
+## 1.  Minikube:
 
 -   Description: A local Kubernetes system designed for deploying a Kubernetes cluster on a single machine.
 -   Features:
@@ -32,7 +32,7 @@
 -   Disadvantages:
     -   Limited scalability for more complex projects.
 
-##2.  Kind (Kubernetes IN Docker):
+## 2.  Kind (Kubernetes IN Docker):
 
 -   Description: A tool that allows creating local Kubernetes clusters in Docker containers.
 -   Features:
@@ -46,7 +46,7 @@
     -   Requires Docker to work, which can introduce additional constraints or licensing issues.
     -   Can be more complex to set up compared to Minikube.
 
-##3.  K3d:
+## 3.  K3d:
 
 -   Description: A tool for creating local Kubernetes clusters in Docker containers using Rancher Kubernetes Engine (RKE).
 -   Features:
