@@ -5,5 +5,7 @@ AsciiArtify is a startup planning to develop a new software product that convert
 
 
 ## Demo
-Here is a short demonstration of deploying the "Hello World" application on Kubernetes using the recommended tool:
+Here is a short demonstration of deploying the "hello-minikube" application on minikube:
+
+![1](./files/tty.gif)
 
