@@ -7,7 +7,9 @@ Installing Minikibe and Agrocd described [here](./POC.md)
  - Project Name
  - Sync Policy
  - Mark "Auto-Create Namespace"
- ![1](./files/1-min.png)
+ - 
+ ![1](/files/1-min.png)
+ 
  - Add repo URL and select Revision and path to helm
  -  Also select Cluster URL and namespace for application running. Please don't forget tomark "Auto-Create Namespace"
  ![2](./files/2-min.png)
