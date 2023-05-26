@@ -1,9 +1,8 @@
-
-## Tools Comparison
+## Server preparing
 With terraform I am preparing server [Main terraform](./main.tf) in GCP
 Terraform instaling additionall Docker and minikube.
 
-## Commands for
+## Commands for I've used for AgroCD installing
 
 Here's an explanation of each command:
 
