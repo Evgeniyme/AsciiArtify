@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
+# Retrieve all namespaces
+namespaces=$(kubectl get namespaces -o=jsonpath='{range .items[*].metadata}{.name}{"\n"}{end}')
+
+# Iterate over each namespace
+for namespace in $namespaces; do
+  echo -e "${GREEN}Namespace: $namespace${NC}"
+
+  # Retrieve pods for the namespace
+  echo -e "${YELLOW}Pods:${NC}"
+  kubectl get pods -n $namespace | tail -n +2 | while read line; do
+    # Extract CPU and memory usage from the output
+    NAME=$(echo $line | awk '{print $1}')
+    CPU=$(echo $line | awk '{print $2}')
+    MEMORY=$(echo $line | awk '{print $3}')
+
+    # Output the statistics to the console
+    echo -e "Resource: Pod, Namespace: $namespace, Name: ${YELLOW}$NAME${NC}, CPU: $CPU, Memory: $MEMORY"
+  done
+
+  # Retrieve deployments for the namespace
+  echo -e "${YELLOW}Deployments:${NC}"
+  kubectl get deployments -n $namespace | tail -n +2 | while read line; do
+    # Extract CPU and memory usage from the output
+    NAME=$(echo $line | awk '{print $1}')
+    CPU=$(echo $line | awk '{print $2}')
+    MEMORY=$(echo $line | awk '{print $3}')
+
+    # Output the statistics to the console
+    echo -e "Resource: Deployment, Namespace: $namespace, Name: ${YELLOW}$NAME${NC}, CPU: $CPU, Memory: $MEMORY"
+  done
+
+  echo
+done
