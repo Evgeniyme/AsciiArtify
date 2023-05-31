@@ -12,7 +12,7 @@ AsciiArtify is a startup planning to develop a new software product that convert
 | app-multicontainer  | Kubernetes Pod       | Deployment with multiple containers                 | [Link](./yaml/app-multicontainer.yaml)        |
 | app-resource        | Kubernetes Pod       | Pod with resource requests and limits               | [Link](./yaml/app-resource.yaml)              |
 | app-secret-env      | Kubernetes Pod       | Pod using secrets in env variables                  | [Link](./yaml/app-secret-env.yaml)            |
-| app                 | Kubernetes Pod       | Simple pod with a single container                  | [Link](./yaml/app.yaml)                       |
+| app                 | Kubernetes Pod       | Simple pod with a single container                  | [Link](/yaml/app.yaml)                       |
 | app-livenessprob    | Kubernetes Pod       | Pod with a liveness probe                           | [Link](./yaml/app-livenessProbe.yaml)         |
 | app-readinessprob   | Kubernetes Pod       | Pod with a readiness probe                          | [Link](./yaml/app-readinessProbe.yaml)        |
 | app-volume          | Kubernetes Pod       | Pod with a volume mount                             | [Link](./yaml/app-volumeMounts.yaml)          |
